@@ -1,0 +1,9 @@
+<h1>Employee No:${eno}</h1>
+<h1>Employee Name:${ename}</h1>
+<h2>Employee Salary:${salary}</h2>
+<h2>TA :${ta}</h2>
+<h2>DA :${da}</h2>
+<h2>HRA :${hra}</h2>
+<h2>PF :${pf}</h2>
+<h2>Grass Salary:${gsalary}</h2>
+<h2>Net Salary:${nsalary}</h2>
