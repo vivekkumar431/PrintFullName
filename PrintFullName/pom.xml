@@ -52,6 +52,7 @@
 					<image>
 						<builder>paketobuildpacks/builder-jammy-base:latest</builder>
 					</image>
+					 <mainClass>com.vivek.Application</mainClass>
 				</configuration>
 			</plugin>
 		</plugins>

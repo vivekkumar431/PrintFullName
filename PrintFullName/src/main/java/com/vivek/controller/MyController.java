@@ -20,7 +20,7 @@ public class MyController {
     	 model.put("fullname", fullname);
     	 return "printName";
     	 }
-     
+
      //Bigest Number Page
 	  @RequestMapping("/big")
     public String numberPage() {
@@ -41,8 +41,8 @@ public class MyController {
     	model1.put("bignum", biggest);
     	 return "printBigNumber";
     	 }
-     
-     
+
+
      //Student Marks Details
      @RequestMapping("/student")
      public String studentPage() {
@@ -79,7 +79,7 @@ public class MyController {
     	 model.put("pass",pass);
     	 return "printStudent";
     	 }
-     
+
      //login Page
      @RequestMapping("/login")
        public String loginPage() {
@@ -88,7 +88,7 @@ public class MyController {
      @RequestMapping("/loginpage")
      public String loginPageDemo(@RequestParam String uname,@RequestParam String psw,ModelMap model) {
     	String message="";
-    	 if(uname.equals("vivek") && psw.equals("12345")) {
+    	 if(uname.equals("vivek") && psw.equals("123456")) {
     		 message="Sucess Message";
     	 }
     	 else {
@@ -97,7 +97,7 @@ public class MyController {
     	 model.put("message", message);
   	   return "loginpage";
      }
-     
+
      //Electric Bill Page
      @RequestMapping("/consumer")
      public String consumerPage() {
@@ -125,7 +125,7 @@ public class MyController {
            model.put("totalbill", totalbill);
     	return "consumerbill";
      }
-     
+
      //Product Page
      @RequestMapping("/product")
      public String productPage() {
@@ -159,7 +159,7 @@ public class MyController {
         model.put("invoicebill",invoicebill);
     	return "productinvoice";
      }
-     
+
      //Employee Salary Details Page
      @RequestMapping("/emp")
      public String emppage() {
@@ -193,7 +193,7 @@ public class MyController {
     	double daAmount=salary*da;
     	double hraAmount=salary*hra;
     	double pfAmount=salary*pf;
-    	
+
     	model.put("ta",taAmount);
     	model.put("da",daAmount);
     	model.put("hra",hraAmount);
@@ -204,6 +204,6 @@ public class MyController {
     	model.put("nsalary",nsalary);
     	return "empinvoice";
      }
-     }     
-	
+     }
+
 
